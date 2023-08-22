@@ -1,0 +1,230 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Roboto";
+}
+body{
+    background-color: rgb(243, 243, 243);
+    overflow-x:hidden ;
+}
+
+header{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding:0px 50px;
+   border-bottom: 5px solid rgb(66, 158, 243);
+   height: 40px;
+}
+.welcome{
+    display: flex;
+    gap:10px;
+    font-weight: 300;
+    font-size: 15px;
+}
+.languages{
+    display: flex;
+    font-weight: 300;
+    list-style: none;
+    gap:10px;
+    font-size: 15px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+    align-items: center;
+}
+nav img{
+    width:20%;
+}
+.intro{
+    color:rgb(70, 62, 62);
+    /* font-size: 40px; */
+    width: 30%;
+    border-left: 1px solid;
+    padding-left: 20px;
+}
+.live_now{
+    border:1px solid red;
+    padding: 8px 20px;
+    border-radius: 5px;
+}
+form{
+    display: flex;
+    justify-content: start;
+    width: 26%;
+}
+form input{
+    width: 85%;
+    height: 33px;
+    padding-left: 10px;
+    border:1px solid rgb(206, 198, 198);
+    background-color: transparent;
+    outline: none;
+}
+form button{
+    width: 15%;
+    position: relative;
+    left: -3px;
+    border: 1px solid rgb(7, 127, 197);
+}
+.nav2{
+    background-color: rgb(77, 72, 72);
+    color: white;
+    width: 94%;
+    margin: auto;
+}
+.nav2 ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+.nav2 ul li{
+    border-right:1px solid white;
+    padding:5px;
+    font-weight: 300;
+    font-size: .9rem;
+}
+
+.hero{
+    display: flex;
+    width: 94%;
+    margin:10px auto;
+    gap:10px;
+}
+.hero img{
+    width:65%
+}
+.hero_par{
+    margin-bottom:10px;
+    font-size: .9rem;
+}
+.hero_intro{
+    color: rgb(100, 97, 97);
+    font-size: 2rem;
+    line-height: 1.7rem;
+    margin-bottom:15px;
+}
+.hr{
+    border:3px solid  rgb(7, 127, 197);
+    width:40%;
+    margin-bottom: 20px;
+}
+.hero_text{
+    color:rgb(82, 79, 79);
+}
+.hero_footer{
+    position: absolute;
+    bottom: 10px;
+    color:rgb(82, 79, 79);
+}
+.last{
+    border-left: 5px solid gray;
+    margin: 10px 0px;
+    padding-left: 10px;
+}
+
+.about_us{
+    display: flex;
+    width: 94%;
+    margin:25px auto;
+    gap:10px;
+}
+.img_1{
+    width: 55%;
+}
+.img_1 img{
+    width: 100%;
+}
+.img_1 h2{
+    color: rgb(100, 97, 97);
+    font-size: 1.5rem;
+    line-height: 1.7rem;
+    margin-bottom:15px;
+}
+.section_2{
+    width: 45%;
+}
+.img_2{
+    display: flex;
+    gap:3%;
+}
+.img_2 img{
+    width: 60%;
+    height:30vh;
+}
+.img_desc{
+    width: 40%;;
+}
+.second{
+    margin-top: 50px;
+}
+.img_desc p{
+    font-size: .9rem;
+}
+.img_desc h2{
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+ /* Define the animation for the rainbow gradient */
+ @keyframes rainbow {
+    0% { background: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red); }
+    14% { background: linear-gradient(to right, indigo, blue, green, yellow, orange, red, violet); }
+    28% { background: linear-gradient(to right, blue, green, yellow, orange, red, violet, indigo); }
+    42% { background: linear-gradient(to right, green, yellow, orange, red, violet, indigo, blue); }
+    57% { background: linear-gradient(to right, yellow, orange, red, violet, indigo, blue, green); }
+    71% { background: linear-gradient(to right, orange, red, violet, indigo, blue, green, yellow); }
+    85% { background: linear-gradient(to right, red, violet, indigo, blue, green, yellow, orange); }
+    100% { background: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red); }
+  }
+
+  /* Apply the animation to the hr element */
+  hr.rainbow-hr {
+    border: none;
+    height: 5px;
+    background-size: 200% 100%;
+    animation: rainbow 8s linear infinite;
+  }
+
+  .sustainabilty{
+    height: 300px;
+    background-color: rgb(108, 173, 173);
+    width: 100%;
+  }
+
+
+  /* Apply styles to the donut container */
+  .colorful-donut {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  /* Outer circle */
+  .outer-circle {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #e74c3c; /* Red */
+    position: absolute;
+  }
+
+  /* Inner circle */
+  .inner-circle {
+    width: 60%;
+    height: 60%;
+    border-radius: 50%;
+    background-color: #3498db; /* Blue */
+    position: relative;
+    z-index: 1;
+  }
