@@ -318,3 +318,48 @@ form button{
     margin:10px auto;
     width: 15%;
 }
+
+.footer{
+    background-color: #1b1a1a;
+    height: 40vh;
+    width: 98%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.icons .fa{
+    color: var(--un-blue);
+    font-size: 2rem;
+}
+
+.icons .fa:hover{
+    color: #b33b3b;
+}
+.footer p{
+    width: 60%;
+    margin-top: 20px;
+    text-align: center;
+    color: gainsboro;
+    font-size: .9rem;
+}
+
+.copy{
+    background-color: #000000;
+    height: 8vh;
+    width: 98%;
+    margin: auto;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4px;
+}
